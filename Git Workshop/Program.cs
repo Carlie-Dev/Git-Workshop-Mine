@@ -5,20 +5,28 @@
         static void Main(string[] args)
         {
             int count = 0;
-            while (true){
+            bool counting = true;
+
+            while (counting){
+
                 string fizzbuzz_out = "";
+
                 if ((count % 3 == 0) && (count % 5 == 0))
                 {
                     fizzbuzz_out = "Fizzbuzz";
-                } else if ((count % 3 == 0))
+                } 
+                else if ((count % 3 == 0))
                 {
                     fizzbuzz_out = "Fizz";
-                }  if ((count % 5 == 0))
+                }  
+                if ((count % 5 == 0))
                 {
                     fizzbuzz_out = "Buzz";
                 }
+
                 Console.WriteLine($"{count}! {fizzbuzz_out}");
                 Thread.Sleep(500);
+
                 count++;
             }
         }
