@@ -13,7 +13,7 @@
                 } else if ((count % 3 == 0))
                 {
                     fizzbuzz_out = "Fizz";
-                }  if ((count % 5 == 0))
+                } else if ((count % 5 == 0))
                 {
                     fizzbuzz_out = "Buzz";
                 }
